@@ -24,14 +24,34 @@ class Solution {
 
     int main()
     {
-            string first = "bank", second = "kanb";
-            Solution ans1;
+        string first = "bank", second = "kanb";
+        Solution ans1, ans2, ans3;
 
-            bool result = ans1.areAlmostEqual(first, second);
+        bool result1 = ans1.areAlmostEqual(first, second);
 
-            if(result)
-                cout<<"One String swap can make Strings equal. "<<endl;
+        if(result1)
+            cout<<"One String swap can make Strings equal. "<<endl;
 
-            else
-                cout<<"One String swap can'nt make Strings equal. "<<endl;
-    }
+        else
+            cout<<"One String swap can'nt make Strings equal. "<<endl;
+            
+        string third = "attack", fourth = "defend";
+    	
+        bool result2 = ans2.areAlmostEqual(third, fourth);
+
+        if(result2)
+    		cout<<"One String swap can make Strings equal. "<<endl;
+
+    	else
+            cout<<"One String swap can'nt make Strings equal. "<<endl;
+        
+        string fifth = "kelb", sixth = "kelb";
+        
+        bool result3 = ans3.areAlmostEqual(fifth, sixth);
+
+    	if(result3)
+            cout<<"One String swap can make Strings equal. "<<endl;
+
+        else
+            cout<<"One String swap can'nt make Strings equal. "<<endl;
+}
